@@ -1,0 +1,190 @@
+{
+	"id": "79c1cfc0-671b-4547-b3ed-dcaed6db0484",
+	"name": "Hospital Local",
+	"values": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:3000/api/v1",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "accessToken",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "refreshToken",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "deleteToken",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "patientId",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "patientId_2",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "ID_MOI",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "e2e_token",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "e2e_patientId",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "patientId3",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "mainEmail",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "mainPassword",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "emailDangKy",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "tenDangKy",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "mkDangKy",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "resetToken",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "userId",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "email",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "userName",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "userNameVRF",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "emailVRF",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "passwordVRF",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "userNameSecond",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "emailSecond",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "passwordSecond",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "newUserName",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "newEmail",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "count_before",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "check_ready",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "emailSaiFormat",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		}
+	],
+	"color": null,
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2026-05-02T18:41:12.698Z",
+	"_postman_exported_using": "Postman/11.93.0"
+}

@@ -1,0 +1,106 @@
+{
+  "id": "79c1cfc0-671b-4547-b3ed-dcaed6db0484",
+  "name": "Hospital Local",
+  "values": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000/api/v1",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "accessToken",
+      "value": "",
+      "type": "any",
+      "enabled": true
+    },
+    {
+      "key": "refreshToken",
+      "value": "",
+      "type": "any",
+      "enabled": true
+    },
+    {
+      "key": "deleteToken",
+      "value": "",
+      "type": "any",
+      "enabled": true
+    },
+    {
+      "key": "patientId",
+      "value": "",
+      "type": "any",
+      "enabled": true
+    },
+    {
+      "key": "patientId_2",
+      "value": "",
+      "type": "any",
+      "enabled": true
+    },
+    {
+      "key": "ID_MOI",
+      "value": "",
+      "type": "any",
+      "enabled": true
+    },
+    {
+      "key": "e2e_token",
+      "value": "",
+      "type": "any",
+      "enabled": true
+    },
+    {
+      "key": "e2e_patientId",
+      "value": "",
+      "type": "any",
+      "enabled": true
+    },
+    {
+      "key": "patientId3",
+      "value": "",
+      "type": "any",
+      "enabled": true
+    },
+    {
+      "key": "mainEmail",
+      "value": "thuhien_moi@gmail.com",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "mainPassword",
+      "value": "hienn@2004",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "mainUserName",
+      "value": "",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "mainUserId",
+      "value": "",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "updatedEmail",
+      "value": "",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "updatedUserName",
+      "value": "",
+      "type": "default",
+      "enabled": true
+    }
+  ],
+  "color": null,
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "2026-04-26T18:20:43.014Z",
+  "_postman_exported_using": "Postman/11.93.0"
+}

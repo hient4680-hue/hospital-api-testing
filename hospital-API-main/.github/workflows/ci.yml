@@ -1,0 +1,45 @@
+name: Kiem thu tu dong Hospital API
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Cai dependencies
+        run: npm install
+
+      - name: Cai Newman
+        run: |
+          npm install -g newman
+          npm install -g newman-reporter-htmlextra
+
+      - name: Khoi dong server
+        run: npm start &
+        env:
+          MONGODB_URI: ${{ secrets.MONGODB_URI }}
+
+      - name: Cho server san sang
+        run: sleep 10
+
+      - name: Chay Newman
+        run: |
+          newman run HospitalAPI_Collection.json \
+            -e HospitalAPI_Environment.json \
+            --reporters htmlextra,cli \
+            --reporter-htmlextra-export BaoCao_Newman.html
+
+      - name: Luu bao cao
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: newman-report
+          path: BaoCao_Newman.html
