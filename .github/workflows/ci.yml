@@ -27,7 +27,7 @@ jobs:
       - name: Khoi dong server
         run: |
           nohup npm start > server.log 2>&1 &
-          sleep 20
+          sleep 30
         env:
           MONGODB_URI: ${{ secrets.MONGODB_URI }}
 
