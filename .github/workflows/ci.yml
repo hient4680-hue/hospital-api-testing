@@ -38,7 +38,7 @@ jobs:
             --reporter-htmlextra-export BaoCao_Newman.html
 
       - name: Luu bao cao
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         if: always()
         with:
           name: newman-report
