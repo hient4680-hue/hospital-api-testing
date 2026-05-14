@@ -24,6 +24,13 @@ jobs:
           npm install -g newman-reporter-htmlextra
           npm install -g nyc
 
+      - name: Debug env
+        run: |
+          echo "CHECK URI"
+          echo "$MONGODB_URI"
+        env:
+          MONGODB_URI: ${{ secrets.MONGODB_URI }}
+
       - name: Khoi dong server
         run: |
           nohup npm start > server.log 2>&1 &
