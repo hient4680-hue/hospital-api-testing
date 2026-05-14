@@ -7,12 +7,13 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
 
-      - uses: actions/setup-node@v3
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
 
       - name: Cai dependencies
         run: npm install
@@ -21,21 +22,25 @@ jobs:
         run: |
           npm install -g newman
           npm install -g newman-reporter-htmlextra
+          npm install -g nyc
 
       - name: Khoi dong server
-        run: npm start &
+        run: |
+          nohup npm start > server.log 2>&1 &
+          sleep 20
         env:
           MONGODB_URI: ${{ secrets.MONGODB_URI }}
 
-      - name: Cho server san sang
-        run: sleep 10
+      - name: Kiem tra server
+        run: |
+          cat server.log
 
       - name: Chay Newman
         run: |
           newman run HospitalAPI_Collection.json \
-            -e HospitalAPI_Environment.json \
-            --reporters htmlextra,cli \
-            --reporter-htmlextra-export BaoCao_Newman.html
+          -e HospitalAPI_Environment.json \
+          --reporters htmlextra,cli \
+          --reporter-htmlextra-export BaoCao_Newman.html
 
       - name: Luu bao cao
         uses: actions/upload-artifact@v4
