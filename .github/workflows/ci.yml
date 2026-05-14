@@ -27,19 +27,22 @@ jobs:
       - name: Khoi dong server
         run: |
           nohup npm start > server.log 2>&1 &
-          sleep 30
+          sleep 60
+
+          echo "===== SERVER LOG ====="
+          cat server.log
+
+          echo "===== CHECK SERVER ====="
+          curl http://localhost:3000 || exit 1
         env:
           MONGODB_URI: ${{ secrets.MONGODB_URI }}
-
-      - name: Kiem tra server
-        run: |
-          cat server.log
+          JWT_SECRET: ${{ secrets.JWT_SECRET }}
 
       - name: Chay Newman
         run: |
           newman run HospitalAPI_Collection.json \
           -e HospitalAPI_Environment.json \
-          --reporters htmlextra,cli \
+          --reporters cli,htmlextra \
           --reporter-htmlextra-export BaoCao_Newman.html
 
       - name: Luu bao cao
