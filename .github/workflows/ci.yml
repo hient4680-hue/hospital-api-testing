@@ -29,7 +29,7 @@ jobs:
           echo "CHECK URI"
           echo "$MONGODB_URI"
         env:
-          MONGODB_URI: "mongodb+srv://thuhien:20012004@cluster0.hfbfgfp.mongodb.net/hospitalAPI?retryWrites=true&w=majority"
+          MONGODB_URI: ${{ secrets.MONGODB_URI }}
 
       - name: Khoi dong server
         run: |
@@ -42,7 +42,7 @@ jobs:
           echo "===== CHECK SERVER ====="
           curl http://localhost:3000 || exit 1
         env:
-          MONGODB_URI: ${{ secrets.MONGODB_URI }}
+          MONGODB_URI: "mongodb+srv://thuhien:20012004@cluster0.hfbfgfp.mongodb.net/hospitalAPI?retryWrites=true&w=majority"
           JWT_SECRET: ${{ secrets.JWT_SECRET }}
 
       - name: Chay Newman
