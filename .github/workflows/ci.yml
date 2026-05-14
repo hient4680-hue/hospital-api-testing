@@ -42,7 +42,7 @@ jobs:
           echo "===== CHECK SERVER ====="
           curl http://localhost:3000 || exit 1
         env:
-          MONGODB_URI: "mongodb+srv://thuhien:20012004@cluster0.hfbfgfp.mongodb.net/hospitalAPI?retryWrites=true&w=majority"
+          MONGODB_URI: "mongodb+srv://thuhien:20012004@cluster0.hfbfgfp.mongodb.net/hospitalAPI?retryWrites=true&w=majority&appName=Cluster0"
           JWT_SECRET: ${{ secrets.JWT_SECRET }}
 
       - name: Chay Newman
