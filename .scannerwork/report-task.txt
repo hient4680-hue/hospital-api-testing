@@ -1,0 +1,7 @@
+organization=hient4680-hue
+projectKey=hient4680-hue_hospital-api-testing
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.88086
+dashboardUrl=https://sonarcloud.io/dashboard?id=hient4680-hue_hospital-api-testing
+ceTaskId=AZ5OWWj-gAitlL2j62pl
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZ5OWWj-gAitlL2j62pl
